@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f2f2;
+        }
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #172554;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+        }
+        section {
+            background: white;
+            margin: 30px auto;
+            padding: 25px;
+            width: 80%;
+            border-radius: 8px;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 6px;
+        }
+        button {
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        th {
+            background: #1e3a8a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 College Library</h1>
+    <p>Library Management System</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#books">Books</a>
+    <a href="#login">Login</a>
+    <a href="#materials">Materials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Library</h2>
+    <p>Search books, manage borrowing, check fines and download study materials.</p>
+</section>
+
+<section id="books">
+    <h2>Search Books</h2>
+
+    <input type="text" placeholder="Search book">
+
+    <button>Search</button>
+
+    <table>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>Java Programming</td>
+            <td>Herbert Schildt</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>Database Systems</td>
+            <td>Ramakrishnan</td>
+            <td>Issued</td>
+        </tr>
+
+        <tr>
+            <td>Computer Networks</td>
+            <td>Tanenbaum</td>
+            <td>Available</td>
+        </tr>
+    </table>
+</section>
+
+<section id="login">
+    <h2>Student / Admin Login</h2>
+
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password"><br>
+
+    <select>
+        <option>Student</option>
+        <option>Admin</option>
+    </select><br>
+
+    <button>Login</button>
+    <button>Register</button>
+</section>
+
+<section id="materials">
+    <h2>Study Materials</h2>
+
+    <select>
+        <option>Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <select>
+        <option>Select Semester</option>
+        <option>Semester 1</option>
+        <option>Semester 2</option>
+        <option>Semester 3</option>
+        <option>Semester 4</option>
+    </select>
+
+    <br><br>
+
+    <button>Download Material</button>
+</section>
+
+<section>
+    <h2>My Borrow History</h2>
+
+    <table>
+        <tr>
+            <th>Book</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+            <th>Fine</th>
+        </tr>
+
+        <tr>
+            <td>Java Programming</td>
+            <td>01-08-2026</td>
+            <td>15-08-2026</td>
+            <td>₹0</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Library</h2>
+
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Message"></textarea><br>
+
+    <button>Send Message</button>
+</section>
+
+<footer>
+    <p>© 2026 College Library Management System</p>
+</footer>
+
+</body>
+</html>
