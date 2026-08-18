@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgriMart — Agricultural Supplies Store</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>AgriMart — Agricultural Supplies Store</h1>
+<p>Farmers and buyers trade seeds, tools and equipment online.</p>
+<p><b>Lab Experiment Number:</b> 18</p>
+<hr>
+
+<h2>Farmer</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>Register</li>
+  <li>OTP Verification</li>
+  <li>Manage Orders</li>
+  <li>Add/Update/Delete Product</li>
+  <li>Upload Images</li>
+  <li>My Sales</li>
+  <li>Update Shipping Status</li>
+</ul>
+
+<p><b>Farmer Login Form:</b></p>
+<form onsubmit="return showMessage('Farmer')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Public/Buyer</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>OTP Verification</li>
+  <li>Manage Wallet Balance</li>
+  <li>Search & View Product</li>
+  <li>Add to Cart</li>
+  <li>Order Product</li>
+  <li>My Order Status</li>
+</ul>
+
+<p><b>Public/Buyer Login Form:</b></p>
+<form onsubmit="return showMessage('Public/Buyer')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

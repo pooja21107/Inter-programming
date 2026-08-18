@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ko-Matha Dairy Farm Website</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Ko-Matha Dairy Farm Website</h1>
+<p>Order fresh A1 dairy products and manage farm stock.</p>
+<p><b>Lab Experiment Number:</b> 31</p>
+<hr>
+
+<h2>Admin</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Registration</li>
+  <li>Login</li>
+  <li>Stock Entry</li>
+  <li>Daily/Monthly/Yearly Report</li>
+  <li>Manage Vendor & Cow Details</li>
+</ul>
+
+<p><b>Admin Login Form:</b></p>
+<form onsubmit="return showMessage('Admin')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Customer</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Browse Products (Milk, Curd, Ghee etc.)</li>
+  <li>View Purchase Details</li>
+  <li>Place Online Purchase Order</li>
+</ul>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

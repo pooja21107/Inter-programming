@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Income Tax Calculator</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Online Income Tax Calculator</h1>
+<p>Calculate income tax based on salary, deductions and slabs.</p>
+<p><b>Lab Experiment Number:</b> 46</p>
+<hr>
+
+<h2>Admin</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>Update Input Fields</li>
+  <li>Modify Tax Slabs per Government Norms</li>
+</ul>
+
+<p><b>Admin Login Form:</b></p>
+<form onsubmit="return showMessage('Admin')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Employee</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login (Social/Gmail)</li>
+  <li>Enter Salary & Deductions</li>
+  <li>View Tax Breakdown & Net Income</li>
+  <li>Download Summary Report</li>
+</ul>
+
+<p><b>Employee Login Form:</b></p>
+<form onsubmit="return showMessage('Employee')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

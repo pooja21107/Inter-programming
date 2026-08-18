@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EasyToll — Online Toll Payment</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>EasyToll — Online Toll Payment</h1>
+<p>Pay tolls in advance and manage vehicle toll passes.</p>
+<p><b>Lab Experiment Number:</b> 15</p>
+<hr>
+
+<h2>Admin</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>Manage User & Toll Pass</li>
+  <li>Manage Toll Login</li>
+  <li>Approve Toll Pass</li>
+  <li>Generate QR Code</li>
+  <li>Create Toll Details</li>
+</ul>
+
+<p><b>Admin Login Form:</b></p>
+<form onsubmit="return showMessage('Admin')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>Add Money to eWallet</li>
+  <li>Buy Toll eTicket</li>
+  <li>Apply/Renew Toll Pass</li>
+  <li>Get QR Code</li>
+</ul>
+
+<p><b>User Login Form:</b></p>
+<form onsubmit="return showMessage('User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Toll Gate User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>Scan QR</li>
+  <li>Verify Toll Pass ID</li>
+  <li>Verify Toll Ticket</li>
+  <li>Update Toll Location</li>
+</ul>
+
+<p><b>Toll Gate User Login Form:</b></p>
+<form onsubmit="return showMessage('Toll Gate User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

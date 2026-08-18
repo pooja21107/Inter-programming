@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Recipe Book Platform</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Digital Recipe Book Platform</h1>
+<p>Browse, save and share recipes with a meal planner.</p>
+<p><b>Lab Experiment Number:</b> 42</p>
+<hr>
+
+<h2>User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register/Login</li>
+  <li>Search & Filter Recipes</li>
+  <li>View Recipe (Ingredients/Steps)</li>
+  <li>Save Favorite Recipes</li>
+  <li>Upload Own Recipe</li>
+  <li>Rate & Comment</li>
+  <li>Use Meal Planner & Shopping List</li>
+</ul>
+
+<p><b>User Login Form:</b></p>
+<form onsubmit="return showMessage('User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

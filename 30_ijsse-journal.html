@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IJSSE — Scientific Journal Publishing Website</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>IJSSE — Scientific Journal Publishing Website</h1>
+<p>Manuscript submission, review and editorial workflow.</p>
+<p><b>Lab Experiment Number:</b> 30</p>
+<hr>
+
+<h2>Author</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Registration</li>
+  <li>Login</li>
+  <li>List of Papers</li>
+  <li>Author Instructions</li>
+  <li>Publication Charge</li>
+  <li>Article Template</li>
+  <li>Copyright Form</li>
+  <li>Submit Manuscript</li>
+</ul>
+
+<p><b>Author Login Form:</b></p>
+<form onsubmit="return showMessage('Author')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Reviewer</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Registration</li>
+  <li>Login</li>
+  <li>List of Assigned Articles</li>
+</ul>
+
+<p><b>Reviewer Login Form:</b></p>
+<form onsubmit="return showMessage('Reviewer')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Editor</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Registration</li>
+  <li>Login</li>
+  <li>Editorial Committee</li>
+  <li>Editor Responsibility</li>
+</ul>
+
+<p><b>Editor Login Form:</b></p>
+<form onsubmit="return showMessage('Editor')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Public</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>View About Journal</li>
+  <li>View Current Issue / Archive</li>
+  <li>Most Viewed / Cited Articles</li>
+  <li>Subscribe Newsletter</li>
+  <li>Contact Us</li>
+</ul>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

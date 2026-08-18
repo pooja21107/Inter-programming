@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traffic Squad — Online FIR & Penalty System</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Traffic Squad — Online FIR & Penalty System</h1>
+<p>Police create FIRs; vehicle owners view challans online.</p>
+<p><b>Lab Experiment Number:</b> 26</p>
+<hr>
+
+<h2>User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>View Challan</li>
+  <li>View Case Filed</li>
+</ul>
+
+<p><b>User Login Form:</b></p>
+<form onsubmit="return showMessage('User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Police</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>View Rules</li>
+  <li>Create Case (upload proof)</li>
+  <li>Manage Live Traffic Updates</li>
+  <li>Google Map Traffic Link</li>
+</ul>
+
+<p><b>Police Login Form:</b></p>
+<form onsubmit="return showMessage('Police')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Admin</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Manage Police Login</li>
+  <li>View Daily Report</li>
+</ul>
+
+<p><b>Admin Login Form:</b></p>
+<form onsubmit="return showMessage('Admin')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VetCure — Animal Telemedicine</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>VetCure — Animal Telemedicine</h1>
+<p>Farmers consult doctors remotely for animal health issues.</p>
+<p><b>Lab Experiment Number:</b> 19</p>
+<hr>
+
+<h2>User (Farmer)</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>Post Complaint (video/audio/image/text)</li>
+  <li>My Complaint Status</li>
+  <li>View Doctor & Reports</li>
+  <li>Post Feedback</li>
+  <li>Make Payment</li>
+  <li>My Profile</li>
+</ul>
+
+<p><b>User (Farmer) Login Form:</b></p>
+<form onsubmit="return showMessage('User (Farmer)')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Doctor</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>View Complaint</li>
+  <li>Post Solution</li>
+  <li>Manage Cure & News</li>
+  <li>View User & Payment Details</li>
+</ul>
+
+<p><b>Doctor Login Form:</b></p>
+<form onsubmit="return showMessage('Doctor')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

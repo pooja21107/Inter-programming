@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ComplainEase — Complaint Management</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>ComplainEase — Complaint Management</h1>
+<p>Submit, track and resolve user complaints.</p>
+<p><b>Lab Experiment Number:</b> 16</p>
+<hr>
+
+<h2>User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>Register</li>
+  <li>Post Complaint</li>
+  <li>Mark Location on Map</li>
+  <li>View Complaint Status</li>
+  <li>Feedback</li>
+</ul>
+
+<p><b>User Login Form:</b></p>
+<form onsubmit="return showMessage('User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Officer</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>View Complaint</li>
+  <li>Update Status</li>
+  <li>Update Proof of Work</li>
+</ul>
+
+<p><b>Officer Login Form:</b></p>
+<form onsubmit="return showMessage('Officer')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Admin</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Generate Officer ID/Password</li>
+  <li>Create/Delete Account</li>
+  <li>View Accounts</li>
+  <li>Change Password</li>
+</ul>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

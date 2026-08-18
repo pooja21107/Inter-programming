@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blood Management Information System</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Blood Management Information System</h1>
+<p>Track donor records and blood bank availability.</p>
+<p><b>Lab Experiment Number:</b> 23</p>
+<hr>
+
+<h2>Donor/User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Login</li>
+  <li>Register</li>
+  <li>Post Donor Information</li>
+  <li>My Donor Info</li>
+  <li>Search Donor Details</li>
+  <li>Search Blood Bank Details</li>
+</ul>
+
+<p><b>Donor/User Login Form:</b></p>
+<form onsubmit="return showMessage('Donor/User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Hospital</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>Post Blood Bank Info</li>
+  <li>Update Blood Group Status</li>
+  <li>View Blood Bank Details</li>
+</ul>
+
+<p><b>Hospital Login Form:</b></p>
+<form onsubmit="return showMessage('Hospital')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>

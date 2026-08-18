@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>On-Road Vehicle Breakdown Assistance</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: green;
+  margin-top: 30px;
+}
+p {
+  font-size: 16px;
+}
+ul {
+  font-size: 15px;
+}
+input {
+  padding: 5px;
+  margin: 5px 0;
+  width: 200px;
+}
+button {
+  padding: 8px 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>On-Road Vehicle Breakdown Assistance</h1>
+<p>Find nearby licensed mechanics for vehicle repair.</p>
+<p><b>Lab Experiment Number:</b> 25</p>
+<hr>
+
+<h2>User</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>Search Mechanic Details</li>
+  <li>View Google Geo Location</li>
+  <li>Post Feedback</li>
+  <li>My Profile</li>
+</ul>
+
+<p><b>User Login Form:</b></p>
+<form onsubmit="return showMessage('User')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<h2>Admin</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Provide Mechanic Approval</li>
+</ul>
+<hr>
+
+<h2>Mechanic</h2>
+<p>Features / Modules:</p>
+<ul>
+  <li>Register</li>
+  <li>Login</li>
+  <li>Post Business</li>
+  <li>Manage Business</li>
+  <li>View Feedback</li>
+</ul>
+
+<p><b>Mechanic Login Form:</b></p>
+<form onsubmit="return showMessage('Mechanic')">
+  Username: <br>
+  <input type="text" required> <br>
+  Password: <br>
+  <input type="password" required> <br>
+  <button type="submit">Login</button>
+</form>
+<hr>
+
+<script>
+function showMessage(roleName) {
+  alert("This is a demo login for " + roleName + ". No real data is sent.");
+  return false;
+}
+</script>
+
+</body>
+</html>
